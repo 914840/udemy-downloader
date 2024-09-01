@@ -34,17 +34,26 @@ Windows is the primary development OS, but I've made an effort to support Linux 
 
 The following are a list of required third-party tools, you will need to ensure they are in your systems path and that typing their name in a terminal invokes them.
 
-> [!NOTE]  
-> These are seperate requirements that are not installed with the pip command!
->
-> You will need to download and install these manually!
-
 -   [Python 3](https://python.org/)
 -   [ffmpeg](https://www.ffmpeg.org/) - This tool is also available in Linux package repositories.
     -   NOTE: It is recommended to use a custom build from the yt-dlp team that contains various patches for issues when used alongside yt-dlp, however it is not required. Latest builds can be found [here](https://github.com/yt-dlp/FFmpeg-Builds/releases/tag/latest)
 -   [aria2/aria2c](https://github.com/aria2/aria2/) - This tool is also available in Linux package repositories
 -   [shaka-packager](https://github.com/shaka-project/shaka-packager/releases/latest)
 -   [yt-dlp](https://github.com/yt-dlp/yt-dlp/) - This tool is also available in Linux package repositories, but can also be installed using pip if desired (`pip install yt-dlp`)
+
+Install the requirements on *Arch Linux* (requires `yay`).
+
+```
+cat requirements.txt | xargs yay -S
+```
+
+Download `codes.json` for `demoji`
+
+```
+python
+import demoji
+demoji.download_code()
+```
 
 # Usage
 
