@@ -1,3 +1,5 @@
+python
+ffmpeg
 shaka-package-bin
 bento4
 aria2
